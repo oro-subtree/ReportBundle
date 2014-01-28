@@ -1,13 +1,12 @@
 <?php
 
-namespace Oro\Bundle\ReportBundle\DataFixtures\ORM;
+namespace Oro\Bundle\ReportBundle\Migrations\DataFixtures\ORM\v1_0;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Oro\Bundle\ReportBundle\Entity\ReportType;
 
-class LoadReportTypes extends AbstractFixture implements OrderedFixtureInterface
+class LoadReportTypes extends AbstractFixture
 {
     /**
      * Load available report types
@@ -23,13 +22,5 @@ class LoadReportTypes extends AbstractFixture implements OrderedFixtureInterface
         $manager->persist($tableReport);
 
         $manager->flush();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getOrder()
-    {
-        return 40;
     }
 }
