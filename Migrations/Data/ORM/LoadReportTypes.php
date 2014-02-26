@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\ReportBundle\Migrations\DataFixtures\ORM;
+namespace Oro\Bundle\ReportBundle\Migrations\Data\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
