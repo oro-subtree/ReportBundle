@@ -1,4 +1,4 @@
-datagrid:
+datagrids:
     reports-grid:
         extended_entity_name: %oro_report.report.entity.class%
         acl_resource: oro_report_view
